@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom"
 import Home from './components/Home';
 import MainPortfolio from './components/MainPortfolio';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   const [darkmode , setDarkMode] = useState("")
@@ -33,6 +34,7 @@ function App() {
       <Route path='/portfolio' element={<MainPortfolio />}/>
       </Routes>
       <Contact opened={open} toggle={toggleForm}/>
+      <Footer/>
     </div>
     </div>
   );
