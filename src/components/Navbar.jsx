@@ -47,15 +47,15 @@ function Navbar(props) {
         {/* links in mobile device */}
         { toggleMenu ?
         <div className='transition-all duration-150 ease-out translate-x-0 opacity-1 absolute p-1 rounded-md h-auto w-1/4 right-0 top-9 bg-secLightBg dark:bg-secDarkBG md:hidden'>
-        <ul className='flex flex-col'>
-                <li className='hover:text-indigo-600 dark:text-white dark:hover:text-indigo-300 cursor-pointer'>work</li>
+        <ul className='flex flex-col space-y-1'>
+        <li className='hover:text-indigo-600 dark:text-white dark:hover:text-indigo-300 cursor-pointer'><Link to="portfolio"> work</Link></li>
                 <li className='hover:text-indigo-600 dark:text-white dark:hover:text-indigo-300 cursor-pointer'><a href="https://github.com/bouakram" target='_blank' rel="noreferrer" className='flex items-center'><FaGithub />code</a></li>
             </ul>
         </div>
         :
         <div className='transition-all duration-150 ease-out translate-x-full opacity-0 absolute p-1 rounded-md h-auto w-1/2 right-0 top-9 bg-secLightBg dark:bg-secDarkBG md:hidden'>
-        <ul className='flex flex-col'>
-                <li className='hover:text-indigo-600 dark:text-white dark:hover:text-indigo-300 cursor-pointer'>work</li>
+        <ul className='flex flex-col space-y-1'>
+        <li className='hover:text-indigo-600 dark:text-white dark:hover:text-indigo-300 cursor-pointer'><Link to="portfolio"> work</Link></li>
                 <li className='hover:text-indigo-600 dark:text-white dark:hover:text-indigo-300 cursor-pointer'><a href="https://github.com/bouakram" target='_blank' rel="noreferrer" className='flex items-center'><FaGithub />code</a></li>
             </ul>
         </div>
