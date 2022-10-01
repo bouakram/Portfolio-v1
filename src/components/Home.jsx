@@ -3,10 +3,11 @@ import FindMe from './FindMe';
 import MainSection from './MainSection';
 import Portfolio from './Portfolio';
 
-function Home() {
+function Home(props) {
+  const {toggle} = props
   return (
     <div>
-    <MainSection />
+    <MainSection toggle={toggle}/>
     <Portfolio />
     <FindMe />
     </div>

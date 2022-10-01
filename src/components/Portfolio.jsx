@@ -16,6 +16,7 @@ function Portfolio() {
 
         const PortfolioData = [
             {
+                id: 1,
                 img : bondi,
                 title : "Bondi Landing Page",
                 disc : "Landing Page named bondi i re coded it from a psd found in the web",
@@ -25,6 +26,7 @@ function Portfolio() {
                 gitLink : "https://github.com/bouakram/bootstrap-frontend-template"
             },
             {
+                id: 2,
                 img : manage,
                 title : "Manage Landing Page",
                 disc : "Landing Page named Manage i re coded it from a psd found in the web i used react and tailwindcss.",
@@ -34,6 +36,7 @@ function Portfolio() {
                 gitLink : "https://github.com/bouakram/tailwind-project "
             },
             {
+                id: 3,
                 img : tiping,
                 title : "Tiping Game",
                 disc : "This is a tiping game simple version coded by javaScript",
@@ -52,7 +55,7 @@ function Portfolio() {
             // exit={{ y: -10, opacity: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true, amount: 0.8 }}
-            className='shadow-md'>
+            className='shadow-md' key={data.id}>
                 <img className='rounded-md' src={data.img} alt="project one" />
                 <h1 className='font-bold my-2 px-1 text-center'>{data.title}</h1>
                 <p className='font-light my-2 px-1 text-center'>{data.disc}</p>

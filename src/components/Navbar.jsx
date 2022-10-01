@@ -22,7 +22,7 @@ function Navbar(props) {
         toggleMenu ? setToggleMenu(false) : setToggleMenu(true)
     }
   return (
-    <div className='fixed w-screen top-0 z-10 backdrop-blur-sm bg-lightBG/30 p-2 dark:bg-darkBG/30'>
+    <div className='fixed w-screen top-0 z-30 backdrop-blur-sm bg-lightBG/30 p-2 dark:bg-darkBG/30'>
     <nav className='relative flex justify-between items-center container m-auto'>
         {/* logo */}
         <div className="flex space-x-16">
